@@ -1,0 +1,17 @@
+0:0:0:0:0:0:0:1 - - [21/Jun/2016:00:14:44 +0800] "GET /post.jsp HTTP/1.1" 200 1259 http-bio-80-exec-1 1109
+0:0:0:0:0:0:0:1 - - [21/Jun/2016:00:14:45 +0800] "GET /post.jsp HTTP/1.1" 200 1259 http-bio-80-exec-3 2
+0:0:0:0:0:0:0:1 - - [21/Jun/2016:00:14:45 +0800] "GET /static/js/ajax.js HTTP/1.1" 304 - http-bio-80-exec-4 62
+0:0:0:0:0:0:0:1 - - [21/Jun/2016:00:14:47 +0800] "POST /ajax HTTP/1.1" 200 14 http-bio-80-exec-5 286
+0:0:0:0:0:0:0:1 - - [21/Jun/2016:00:14:50 +0800] "POST /ajax HTTP/1.1" 200 14 http-bio-80-exec-6 1
+0:0:0:0:0:0:0:1 - - [21/Jun/2016:00:20:24 +0800] "GET /post.jsp HTTP/1.1" 200 1259 http-bio-80-exec-8 24
+0:0:0:0:0:0:0:1 - - [21/Jun/2016:00:20:24 +0800] "GET /static/js/ajax.js HTTP/1.1" 200 2669 http-bio-80-exec-9 24
+0:0:0:0:0:0:0:1 - - [21/Jun/2016:00:20:27 +0800] "GET /post.jsp HTTP/1.1" 200 1259 http-bio-80-exec-10 1
+0:0:0:0:0:0:0:1 - - [21/Jun/2016:00:20:28 +0800] "GET /static/js/ajax.js HTTP/1.1" 304 - http-bio-80-exec-10 9
+0:0:0:0:0:0:0:1 - - [21/Jun/2016:00:20:30 +0800] "POST /ajax HTTP/1.1" 200 14 http-bio-80-exec-10 4
+0:0:0:0:0:0:0:1 - - [21/Jun/2016:00:25:34 +0800] "GET /post.jsp HTTP/1.1" 200 1259 http-bio-80-exec-4 8
+0:0:0:0:0:0:0:1 - - [21/Jun/2016:00:25:34 +0800] "GET /static/js/ajax.js HTTP/1.1" 200 2849 http-bio-80-exec-4 3
+0:0:0:0:0:0:0:1 - - [21/Jun/2016:00:25:35 +0800] "GET /post.jsp HTTP/1.1" 200 1259 http-bio-80-exec-4 1
+0:0:0:0:0:0:0:1 - - [21/Jun/2016:00:25:35 +0800] "GET /static/js/ajax.js HTTP/1.1" 304 - http-bio-80-exec-4 1
+0:0:0:0:0:0:0:1 - - [21/Jun/2016:00:25:35 +0800] "GET /post.jsp HTTP/1.1" 200 1259 http-bio-80-exec-4 2
+0:0:0:0:0:0:0:1 - - [21/Jun/2016:00:25:35 +0800] "GET /static/js/ajax.js HTTP/1.1" 304 - http-bio-80-exec-4 1
+0:0:0:0:0:0:0:1 - - [21/Jun/2016:00:25:37 +0800] "POST /ajax HTTP/1.1" 200 14 http-bio-80-exec-4 0
