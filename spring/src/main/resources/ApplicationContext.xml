@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!--AOP-->
+    <!--1.将通知类放入spring容器-->
+    <bean id="myAdvice" class="com.kaishengit.aop.MyAdvice"/>
+    <!--2.-->
+    <aop:config>
+        <!--2.1引用通知类对象-->
+        <aop:aspect ref="myAdvice">
+            <!--2.2定义切入点表达式-->
+            <aop:pointcut id="myPointCut" expression="execution(* com.kaishengit.dao..*.*(..))"/>
+            <!--2.3加入各种通知-->
+            <!--环绕通知-->
+            <aop:around method="aroundAdvice" pointcut-ref="myPointCut"/>
+            <!--前置通知-->
+            <!--<aop:before method="beforeAdvice" pointcut-ref="myPointCut"/>-->
+            <!--后置通知-->
+            <!--<aop:after-returning method="afterReturningAdvice" pointcut-ref="myPointCut" returning="result"/>-->
+            <!--异常通知-->
+            <!--<aop:after-throwing method="exceptionAdvice" pointcut-ref="myPointCut" throwing="e"/>-->
+            <!--最终通知-->
+            <!--<aop:after method="finallyAdvice" pointcut-ref="myPointCut"/>-->
+
+        </aop:aspect>
+    </aop:config>
+
+
+
+
+
+    <bean id="bookService" class="com.kaishengit.service.BookService" p:bookName="mysql" p:num="1000">
+
+        <property name="lists">
+            <list>
+                <value>list1</value>
+                <value>list2</value>
+                <value>list3</value>
+            </list>
+        </property>
+        <property name="sets">
+            <set>
+                <value>set1</value>
+                <value>set2</value>
+            </set>
+        </property>
+        <property name="maps">
+            <map>
+                <entry key="k1" value="v1"/>
+                <entry key="k2" value="v2"/>
+            </map>
+        </property>
+        <property name="properties">
+            <props>
+                <prop key="p1">v1</prop>
+                <prop key="p2">v2</prop>
+            </props>
+        </property>
+
+    </bean>
+
+
+
+    <!--
+        lazy-init="true"表示在调用getBean再去创建该类的对象
+    -->
+    <bean id="userDao" class="com.kaishengit.dao.UserDaoImpl" />
+    <!--<bean id="userDao2" class="com.kaishengit.dao.UserDaoImpl2"/>-->
+    <!--
+        自动注入
+        1.byName
+        2.byType
+        3.constructor
+    -->
+
+    <bean  id="userService" class="com.kaishengit.service.UserService" autowire="constructor"/>
+
+
+
+
+
+
+
+    <!--构造方法注入-->
+
+    <!--<bean id="userService" class="com.kaishengit.service.UserService">
+        根据构造方法参数的类型
+        <constructor-arg type="com.kaishengit.dao.UserDao" ref="userDao2"/>
+    </bean>-->
+
+    <!--根据构造方法的索引，索引从零开始
+    <bean id="userService" class="com.kaishengit.service.UserService">
+        <constructor-arg index="0" ref="userDao2"/>
+    </bean>-->
+
+    <!--<bean id="userService" class="com.kaishengit.service.UserService">
+        <constructor-arg name="userDao" ref="userDao2"/>
+    </bean>-->
+
+
+    <!--set注入-->
+    <!--<bean id="userService" class="com.kaishengit.service.UserService" p:userDao-ref="userDao2"/>-->
+
+    <!--<bean id="userService" class="com.kaishengit.service.UserService">
+        <property name="userDao">
+            <bean class="com.kaishengit.dao.UserDaoImpl2"/>
+        </property>
+    </bean>-->
+
+    <!--<bean id="userService" class="com.kaishengit.service.UserService">
+        <property name="userDao">
+            <ref bean="userDao"/>
+        </property>
+    </bean>-->
+
+    <!--<bean id="userService" class="com.kaishengit.service.UserService">
+        <property name="userDao"  ref="userDao2"/>
+    </bean>-->
+
+    <!--
+        scope:默认值singleton
+        如果修改为prototype，则每次调用getBean方法时会获取一个新的对象，容器启动时不会创建该类的对象
+    -->
+
+    <!--<bean id="userDao" class="com.kaishengit.dao.UserDao" scope="prototype"/>-->
+    <!--
+        init-method 定义初始化方法
+        destroy-method 定义销毁 方法
+    <bean id="userDao" class="com.kaishengit.dao.UserDao" init-method="init" destroy-method="destroy"/>-->
+    <!--别名userDao产生另一个名字myDao-->
+    <!--<alias name="userDao" alias="myDao"/>-->
+
+</beans>
