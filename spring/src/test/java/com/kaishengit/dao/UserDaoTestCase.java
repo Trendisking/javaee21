@@ -19,39 +19,57 @@ import java.util.List;
 public class UserDaoTestCase {
     @Inject
     private UserDao userDao;
+
     @Test
-    public void testSave(){
-        User user=new User();
+    public void testSave() {
+        User user = new User();
         user.setUsername("郭嘉");
         user.setPassword("鬼才");
         user.setAddress("三国");
         userDao.save(user);
     }
+
     @Test
-    public void testFindById(){
-        User user=userDao.findById(10);
+    public void testFindById() {
+        User user = userDao.findById(10);
         System.out.println(user);
         Assert.assertNotNull(user);
 
     }
+
     @Test
-    public void testFindByUserName(){
-        User user =userDao.findByUserName("郭嘉");
+    public void testFindByUserName() {
+        User user = userDao.findByUserName("郭嘉");
         System.out.println(user);
         Assert.assertNotNull(user);
     }
+
     @Test
-    public void testFindAll(){
-        List<User>  userList=userDao.findAll();
-        Assert.assertEquals(userList.size(),11);
-        for(User user :userList){
+    public void testFindAll() {
+        List<User> userList = userDao.findAll();
+        Assert.assertEquals(userList.size(), 11);
+        for (User user : userList) {
             System.out.println(user);
         }
     }
+
     @Test
-    public void testCount(){
-        Long count=userDao.count();
-        Assert.assertEquals(count.intValue(),11);
+    public void testCount() {
+        Long count = userDao.count();
+        Assert.assertEquals(count.intValue(), 11);
+
+    }
+
+    @Test
+    public void testDel() {
+        userDao.del(11);
+
+    }
+    @Test
+    public void testUpdate(){
+        User user =userDao.findById(7);
+        user.setPassword("011100");
+        userDao.update(user);
 
     }
 }
