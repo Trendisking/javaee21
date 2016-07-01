@@ -7,7 +7,7 @@
         http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd
-       http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx
         http://www.springframework.org/schema/tx/spring-tx.xsd">
 
     <!--开启关于注解的Bean管理和DI-->
@@ -28,10 +28,18 @@
         <property name="minIdle" value="${jdbc.minIdle}"/>
     </bean>
 
-    <!--创建JDBCTemplate-->
-    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+    <!--配置MyBatis的SqlSessionFactoryBean-->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource"/>
-        <!--<constructor-arg name="dataSource" ref="dataSource"/>-->
+        <!--pojo包里的所有类声明别名为类的名字-->
+        <property name="typeAliasesPackage" value="com.kaishengit.pojo"/>
+        <!--自动加载classpath中的mapper文件夹中的所有xml-->
+        <property name="mapperLocations" value="classpath:mapper/*.xml"/>
+    </bean>
+
+    <!--自动扫描Mapper:1.告诉MyBatis接口的位置 2.将所有mapper放入Spring容器-->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="com.kaishengit.mapper"/>
     </bean>
 
     <!--JDBC事务管理-->
@@ -41,6 +49,19 @@
 
     <!--基于注解的事务管理器-->
     <tx:annotation-driven transaction-manager="transactionManager"/>
+
+    <!--基于XML的事务-->
+    <!--<tx:advice id="txAdvice" transaction-manager="transactionManager">
+        <tx:attributes>
+            &lt;!&ndash;<tx:method name="find*" read-only="true"/>
+            <tx:method name="save*"/>&ndash;&gt;
+            <tx:method name="*"/>
+        </tx:attributes>
+    </tx:advice>
+    <aop:config>
+        <aop:pointcut expression="execution(* com.kaishengit.service..*.*(..))"  id="myPointcut"/>
+        <aop:advisor advice-ref="txAdvice"/>
+    </aop:config>-->
 
 
 </beans>

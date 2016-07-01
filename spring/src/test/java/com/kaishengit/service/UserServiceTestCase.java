@@ -1,6 +1,8 @@
 package com.kaishengit.dao;
 
+import com.kaishengit.pojo.User;
 import com.kaishengit.service.UserService;
+import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.test.context.ContextConfiguration;
@@ -17,8 +19,19 @@ public class UserServiceTestCase {
     @Inject
     private UserService userService;
     @Test
-    public void testLogin()  {
-        userService.login("张三","000","1552.882");
+    public void testSave(){
+        User user=new User();
+        user.setUsername("mybatis+spring");
+        user.setPassword("123");
+        user.setAddress("焦作");
+        userService.save(user);
+    }
+    @Test
+    public void testFindByUserId(){
+        User user=userService.findByUserId(2);
+        Assert.assertNotNull(user);
 
     }
+
+
 }
