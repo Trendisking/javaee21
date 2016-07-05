@@ -1,0 +1,7 @@
+0:0:0:0:0:0:0:1 - - [04/Jul/2016:22:36:15 +0800] "GET /home HTTP/1.1" 200 267 http-bio-80-exec-1 934
+0:0:0:0:0:0:0:1 - - [04/Jul/2016:22:37:05 +0800] "GET /home HTTP/1.1" 200 267 http-bio-80-exec-6 13
+0:0:0:0:0:0:0:1 - - [04/Jul/2016:22:37:05 +0800] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 - http-bio-80-exec-7 81
+0:0:0:0:0:0:0:1 - - [04/Jul/2016:22:37:05 +0800] "GET /static/img/1.jpg HTTP/1.1" 304 - http-bio-80-exec-8 76
+0:0:0:0:0:0:0:1 - - [04/Jul/2016:22:37:11 +0800] "GET /home HTTP/1.1" 200 267 http-bio-80-exec-9 9
+0:0:0:0:0:0:0:1 - - [04/Jul/2016:22:37:11 +0800] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 - http-bio-80-exec-9 7
+0:0:0:0:0:0:0:1 - - [04/Jul/2016:22:37:11 +0800] "GET /static/img/1.jpg HTTP/1.1" 304 - http-bio-80-exec-10 10
