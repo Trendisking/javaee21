@@ -31,4 +31,19 @@
     <select id="findById" resultType="Book">
         SELECT * from t_book WHERE id=#{id}
     </select>
+
+    <select id="count" resultType="long">
+        SELECT count(*) FROM t_book
+    </select>
+
+    <select id="findByPage" resultType="Book">
+        select t_book.*,
+        t_booktype.id as  'bookType.id',t_booktype.booktype as  'bookType.bookType',
+        t_publisher.id as 'publisher.id',t_publisher.pubname as 'publisher.pubname'
+        FROM t_book
+        inner JOIN t_booktype ON t_book.typeid=t_booktype.id
+        inner JOIN t_publisher ON t_book.pubid=t_publisher.id
+        ORDER BY t_book.id DESC
+        limit ${start},${size}
+    </select>
 </mapper>

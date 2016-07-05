@@ -36,7 +36,7 @@
                 </tr>
             </thead>
             <tbody>
-            <c:forEach items="${bookList}" var="book">
+            <c:forEach items="${page.items}" var="book">
                 <tr>
                     <td>${book.bookname}</td>
                     <td>${book.bookauthor}</td>
@@ -52,12 +52,23 @@
             </c:forEach>
             </tbody>
         </table>
-
+        <ul class="pagination pull-right" id="page"></ul>
     </div>
     <script src="/static/js/jquery-3.0.0.min.js"></script>
     <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/jquery.twbsPagination.min.js"></script>
     <script>
         $(function(){
+            $("#page").twbsPagination({
+                totalPages:${page.totalPage},
+                visiblePages:7,
+                first:'首页',
+                prev:'上一页',
+                next:'下一页',
+                last:'尾页',
+                href:'?p={{number}}'
+            });
+
             $(".delLink").click(function(){
                 var id=$(this).attr("rel");
                 if(confirm("确定要删除吗？")){

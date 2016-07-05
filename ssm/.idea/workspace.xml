@@ -116,14 +116,16 @@
       <file leaf-file-name="BookMapper.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/BookMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.043478">
-              <caret line="13" column="84" selection-start-line="13" selection-start-column="84" selection-end-line="13" selection-end-column="84" />
+            <state vertical-scroll-proportion="-14.021739">
+              <caret line="46" column="30" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="30" />
               <folding>
-                <marker date="1467719400000" expanded="true" signature="283:458" placeholder="INSERT INTO t_book... " />
-                <marker date="1467719400000" expanded="true" signature="526:886" placeholder="select t_boo... t_book" />
-                <marker date="1467719400000" expanded="true" signature="952:985" placeholder="DELETE FROM " />
-                <marker date="1467719400000" expanded="true" signature="1055:1215" placeholder="UPDATE t_boo... " />
-                <marker date="1467719400000" expanded="true" signature="1288:1323" placeholder="SELECT * fro... t_book" />
+                <marker date="1467733128000" expanded="true" signature="283:458" placeholder="INSERT INTO t_book... " />
+                <marker date="1467733128000" expanded="true" signature="526:886" placeholder="select t_boo... t_book" />
+                <marker date="1467733128000" expanded="true" signature="952:985" placeholder="DELETE FROM " />
+                <marker date="1467733128000" expanded="true" signature="1055:1215" placeholder="UPDATE t_boo... " />
+                <marker date="1467733128000" expanded="true" signature="1288:1323" placeholder="SELECT * fro... t_book" />
+                <marker date="1467733128000" expanded="true" signature="1389:1416" placeholder="SELECT count... t_book" />
+                <marker date="1467733128000" expanded="true" signature="1487:1878" placeholder="select t_boo... t_book" />
               </folding>
             </state>
           </provider>
@@ -133,7 +135,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/controller/BookController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="59" column="42" selection-start-line="59" selection-start-column="42" selection-end-line="59" selection-end-column="42" />
+              <caret line="32" column="45" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -141,13 +143,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NotFoundException.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/exception/NotFoundException.java">
+      <file leaf-file-name="Page.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/util/Page.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.35280097">
-              <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#1024#1025#0" expanded="true" />
+                <element signature="e#1056#1057#0" expanded="true" />
+                <element signature="e#1093#1094#0" expanded="true" />
+                <element signature="e#1125#1126#0" expanded="true" />
+                <element signature="e#1159#1160#0" expanded="true" />
+                <element signature="e#1188#1189#0" expanded="true" />
+                <element signature="e#1224#1225#0" expanded="true" />
+                <element signature="e#1255#1256#0" expanded="true" />
+                <element signature="e#1288#1289#0" expanded="true" />
+                <element signature="e#1316#1317#0" expanded="true" />
+                <element signature="e#1349#1350#0" expanded="true" />
+                <element signature="e#1377#1378#0" expanded="true" />
+                <element signature="e#1420#1421#0" expanded="true" />
+                <element signature="e#1454#1455#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -167,15 +182,27 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/service/BookService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="30" column="41" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
+              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#710#711#0" expanded="true" />
-                <element signature="e#757#758#0" expanded="true" />
-                <element signature="e#804#805#0" expanded="true" />
-                <element signature="e#852#853#0" expanded="true" />
-                <element signature="e#1199#1200#0" expanded="true" />
-                <element signature="e#1245#1246#0" expanded="true" />
+                <element signature="e#743#744#0" expanded="true" />
+                <element signature="e#790#791#0" expanded="true" />
+                <element signature="e#837#838#0" expanded="true" />
+                <element signature="e#885#886#0" expanded="true" />
+                <element signature="e#1232#1233#0" expanded="true" />
+                <element signature="e#1278#1279#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BookMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/mapper/BookMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -191,11 +218,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="list.jsp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="list.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books/list.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.26087">
-              <caret line="47" column="54" selection-start-line="47" selection-start-column="54" selection-end-line="47" selection-end-column="54" />
+            <state vertical-scroll-proportion="0.5598991">
+              <caret line="54" column="41" selection-start-line="54" selection-start-column="41" selection-end-line="54" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -249,22 +276,23 @@
         <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/kaishengit/pojo/BookType.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kaishengit/pojo/Publisher.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kaishengit/mapper/BookMapper.java" />
         <option value="$PROJECT_DIR$/src/main/resources/config.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/applicationContext.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/kaishengit/service/BookServiceTestCase.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kaishengit/pojo/Book.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/BookMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/kaishengit/mapper/BookTypeMapper.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/BookTypeMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/kaishengit/mapper/PublisherMapper.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/PublisherMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kaishengit/service/BookService.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books/list.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books/new.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books/edit.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kaishengit/controller/BookController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kaishengit/exception/NotFoundException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kaishengit/util/Page.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kaishengit/controller/BookController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kaishengit/mapper/BookMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/BookMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kaishengit/service/BookService.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books/list.jsp" />
       </list>
     </option>
   </component>
@@ -577,6 +605,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="mapper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kaishengit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1358,7 +1416,7 @@
       <created>1467686313338</created>
       <option name="number" value="Default" />
       <updated>1467686313338</updated>
-      <workItem from="1467686320781" duration="33695000" />
+      <workItem from="1467686320781" duration="36982000" />
     </task>
     <servers />
   </component>
@@ -1395,7 +1453,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33695000" />
+    <option name="totallyTimeSpent" value="36982000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1407,7 +1465,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="1932" height="1038" extended-state="0" />
+    <frame x="-8" y="0" width="1932" height="1038" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1506,16 +1564,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/mapper/BookMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/ace56621/314d9920-6490-47f9-9e8d-0bfe27bd687c/bookstore.t_book">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -1587,20 +1635,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/BookMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.043478">
-          <caret line="13" column="84" selection-start-line="13" selection-start-column="84" selection-end-line="13" selection-end-column="84" />
-          <folding>
-            <marker date="1467719400000" expanded="true" signature="283:458" placeholder="INSERT INTO t_book... " />
-            <marker date="1467719400000" expanded="true" signature="526:886" placeholder="select t_boo... t_book" />
-            <marker date="1467719400000" expanded="true" signature="952:985" placeholder="DELETE FROM " />
-            <marker date="1467719400000" expanded="true" signature="1055:1215" placeholder="UPDATE t_boo... " />
-            <marker date="1467719400000" expanded="true" signature="1288:1323" placeholder="SELECT * fro... t_book" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/BookTypeMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.32660782">
@@ -1641,34 +1675,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/service/BookService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="41" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#710#711#0" expanded="true" />
-            <element signature="e#757#758#0" expanded="true" />
-            <element signature="e#804#805#0" expanded="true" />
-            <element signature="e#852#853#0" expanded="true" />
-            <element signature="e#1199#1200#0" expanded="true" />
-            <element signature="e#1245#1246#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/jquery.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books/list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.26087">
-          <caret line="47" column="54" selection-start-line="47" selection-start-column="54" selection-end-line="47" selection-end-column="54" />
           <folding />
         </state>
       </provider>
@@ -1689,23 +1699,96 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/controller/BookController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/exception/NotFoundException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="59" column="42" selection-start-line="59" selection-start-column="42" selection-end-line="59" selection-end-column="42" />
+          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/exception/NotFoundException.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/controller/BookController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35280097">
-          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="45" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/util/Page.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+          <folding>
+            <element signature="e#1024#1025#0" expanded="true" />
+            <element signature="e#1056#1057#0" expanded="true" />
+            <element signature="e#1093#1094#0" expanded="true" />
+            <element signature="e#1125#1126#0" expanded="true" />
+            <element signature="e#1159#1160#0" expanded="true" />
+            <element signature="e#1188#1189#0" expanded="true" />
+            <element signature="e#1224#1225#0" expanded="true" />
+            <element signature="e#1255#1256#0" expanded="true" />
+            <element signature="e#1288#1289#0" expanded="true" />
+            <element signature="e#1316#1317#0" expanded="true" />
+            <element signature="e#1349#1350#0" expanded="true" />
+            <element signature="e#1377#1378#0" expanded="true" />
+            <element signature="e#1420#1421#0" expanded="true" />
+            <element signature="e#1454#1455#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/mapper/BookMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/BookMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.021739">
+          <caret line="46" column="30" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="30" />
+          <folding>
+            <marker date="1467733128000" expanded="true" signature="283:458" placeholder="INSERT INTO t_book... " />
+            <marker date="1467733128000" expanded="true" signature="526:886" placeholder="select t_boo... t_book" />
+            <marker date="1467733128000" expanded="true" signature="952:985" placeholder="DELETE FROM " />
+            <marker date="1467733128000" expanded="true" signature="1055:1215" placeholder="UPDATE t_boo... " />
+            <marker date="1467733128000" expanded="true" signature="1288:1323" placeholder="SELECT * fro... t_book" />
+            <marker date="1467733128000" expanded="true" signature="1389:1416" placeholder="SELECT count... t_book" />
+            <marker date="1467733128000" expanded="true" signature="1487:1878" placeholder="select t_boo... t_book" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/service/BookService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#743#744#0" expanded="true" />
+            <element signature="e#790#791#0" expanded="true" />
+            <element signature="e#837#838#0" expanded="true" />
+            <element signature="e#885#886#0" expanded="true" />
+            <element signature="e#1232#1233#0" expanded="true" />
+            <element signature="e#1278#1279#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books/list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5598991">
+          <caret line="54" column="41" selection-start-line="54" selection-start-column="41" selection-end-line="54" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
     </entry>
