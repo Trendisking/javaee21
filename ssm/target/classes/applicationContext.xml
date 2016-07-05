@@ -31,7 +31,7 @@
         <!--将pojo包中所有类声明别名为类的名字-->
         <property name="typeAliasesPackage" value="com.kaishengit.pojo"/>
         <!--自动加载classpath中的mapper文件夹中的所有xml-->
-       <!-- <property name="mapperLocations" value="classpath:mapper/*.xml"/>-->
+        <property name="mapperLocations" value="classpath:mapper/*.xml"/>
 
     </bean>
     <!--自动扫描mapper 1.告诉mybatis接口的位置 2.将所有Mapper放入Spring容器-->
