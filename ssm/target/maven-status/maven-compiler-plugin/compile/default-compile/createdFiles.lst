@@ -7,4 +7,5 @@ com\kaishengit\controller\BookController.class
 com\kaishengit\service\BookService.class
 com\kaishengit\exception\NotFoundException.class
 com\kaishengit\mapper\PublisherMapper.class
+com\kaishengit\util\Strings.class
 com\kaishengit\pojo\Book.class

@@ -1,11 +1,13 @@
 package com.kaishengit.controller;
 
+import com.google.common.collect.Maps;
 import com.kaishengit.exception.NotFoundException;
 import com.kaishengit.pojo.Book;
 import com.kaishengit.pojo.BookType;
 import com.kaishengit.pojo.Publisher;
 import com.kaishengit.service.BookService;
 import com.kaishengit.util.Page;
+import com.kaishengit.util.Strings;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -16,6 +18,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.inject.Inject;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by 20330 on 2016/7/5.
@@ -28,10 +31,24 @@ public class BookController {
 
     @RequestMapping(method= RequestMethod.GET)
     public String list(@RequestParam(required = false,defaultValue = "1") Integer p,
+                       @RequestParam(required = false) String bookname,
+                       @RequestParam(required = false) Integer type,
+                       @RequestParam(required = false) Integer pub,
             Model model){
-        //List<Book> bookList=bookService.findAllBook();
-        Page<Book> page=bookService.findBookPage(p);
+        bookname=Strings.toUTF8(bookname);
+        Map<String,Object> param= Maps.newHashMap();
+        param.put("bookname", bookname);
+        param.put("type",type);
+        param.put("pub",pub);
+
+        Page<Book> page=bookService.findBookPage(p,param);
+        model.addAttribute("types",bookService.findAllBookType());
+        model.addAttribute("pubs",bookService.findAllPublisher());
         model.addAttribute("page",page);
+        model.addAttribute("bookname",bookname);
+        model.addAttribute("typeid",type);
+        model.addAttribute("pubid",pub);
+
         return  "books/list";
     }
     @RequestMapping(value="/new",method = RequestMethod.GET)
