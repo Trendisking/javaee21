@@ -37,4 +37,9 @@
             </if>
         </where>
     </select>
+
+    <insert id="save">
+        insert INTO t_user(username,password,realname,weixin,roleid,enable)
+        VALUES (#{username},#{password},#{realname},#{weixin},#{roleid},#{enable})
+    </insert>
 </mapper>

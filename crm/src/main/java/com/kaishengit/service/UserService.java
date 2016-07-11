@@ -4,6 +4,7 @@ import com.google.common.collect.Maps;
 import com.kaishengit.mapper.RoleMapper;
 import com.kaishengit.mapper.UserLogMapper;
 import com.kaishengit.mapper.UserMapper;
+import com.kaishengit.pojo.Role;
 import com.kaishengit.pojo.User;
 import com.kaishengit.pojo.UserLog;
 import com.kaishengit.util.ShiroUtil;
@@ -94,5 +95,38 @@ public class UserService {
      */
     public Long findUserCountByParam(Map<String, Object> params) {
         return userMapper.countByParam(params);
+    }
+
+    /**
+     * 获取所有的角色
+     * @return
+     */
+    public List<Role> findAllRole() {
+        return roleMapper.findAll();
+
+    }
+
+    /**
+     * 添加新用户
+     * @param user
+     */
+    public void saveUser(User user) {
+        user.setEnable(true);
+        user.setPassword(DigestUtils.md5Hex(user.getPassword()));
+
+        //TODO向微信公众平台注册账号
+
+        userMapper.save(user);
+
+    }
+
+    /**
+     * 根据用户名查找用户
+     * @param username
+     * @return
+     */
+
+    public User findUserByUserName(String username) {
+        return userMapper.findByUsername(username);
     }
 }
