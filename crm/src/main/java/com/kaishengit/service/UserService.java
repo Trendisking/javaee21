@@ -69,4 +69,30 @@ public class UserService {
         return userLogMapper.countByParam(param);
 
     }
+
+    /**
+     * 根据查询参数获取用户列表
+     * @param params
+     * @return
+     */
+    public List<User> findUserByParam(Map<String, Object> params) {
+        return userMapper.findByParam(params);
+    }
+
+    /**
+     * 获取用户的总数量
+     * @return
+     */
+    public Long findUserCount() {
+        return  userMapper.count();
+    }
+
+    /**
+     * 获取过滤后的用户总数
+     * @param params
+     * @return
+     */
+    public Long findUserCountByParam(Map<String, Object> params) {
+        return userMapper.countByParam(params);
+    }
 }

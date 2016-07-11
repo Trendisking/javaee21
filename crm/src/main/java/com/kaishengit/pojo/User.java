@@ -1,7 +1,7 @@
 package com.kaishengit.pojo;
 
 import java.io.Serializable;
-import java.security.Timestamp;
+import java.sql.Timestamp;
 
 /**
  * Created by 20330 on 2016/7/8.
