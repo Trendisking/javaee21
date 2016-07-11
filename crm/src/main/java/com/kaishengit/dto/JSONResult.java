@@ -1,8 +1,11 @@
 package com.kaishengit.dto;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+
 /**
  * Created by 20330 on 2016/7/11.
  */
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class JSONResult {
 
     public static final String SUCCESS="success";
