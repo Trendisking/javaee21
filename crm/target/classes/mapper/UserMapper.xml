@@ -42,4 +42,8 @@
         insert INTO t_user(username,password,realname,weixin,roleid,enable)
         VALUES (#{username},#{password},#{realname},#{weixin},#{roleid},#{enable})
     </insert>
+
+    <select id="findById" resultType="User">
+        SELECT * from t_user where id=#{id}
+    </select>
 </mapper>
