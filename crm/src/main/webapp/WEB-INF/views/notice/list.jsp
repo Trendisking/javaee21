@@ -24,6 +24,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           apply the skin class to the body tag so the changes take effect.
     -->
     <link rel="stylesheet" href="/static/dist/css/skins/skin-blue.min.css">
+    <link rel="stylesheet" href="/static/plugins/datatables/css/dataTables.bootstrap.min.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -54,6 +55,17 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     </shiro:hasRole>
 
                 </div>
+                <div class="box-body">
+                    <table class="table" id="noticeTable">
+                        <thead>
+                            <tr>
+                                <th>标题</th>
+                                <th>发表时间</th>
+                                <th>发布者</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
             </div>
 
         </section>
@@ -71,10 +83,46 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <script src="/static/bootstrap/js/bootstrap.min.js"></script>
 <!-- AdminLTE App -->
 <script src="/static/dist/js/app.min.js"></script>
+<script src="/static/plugins/datatables/js/jquery.dataTables.min.js"></script>
+<script src="/static/plugins/datatables/js/dataTables.bootstrap.min.js"></script>
+<script src="/static/plugins/moment/moment.min.js"></script>
+<script>
+    $(function(){
+        var dataTable=$("#noticeTable").DataTable({
+            searching:false,
+            serverSide:true,
+            ajax:"/notice/load",
+            ordering:false,
+            "autoWidth":false,
+            columns:[
+                {"data":function(row){
+                    return "<a href='/notice/"+row.id+"'>"+row.title+"</a>"
+                }},
+                {"data":function(row){
+                    var day=moment(row.createtime).format("YYYY-MM-DD HH:mm");
+                    return day;
+                }},
+                {"data":"realname"}
+            ],
 
-<!-- Optionally, you can add Slimscroll and FastClick plugins.
-     Both of these plugins are recommended to enhance the
-     user experience. Slimscroll is required when using the
-     fixed layout. -->
+            "language": { //定义中文
+                "search": "请输入书籍名称:",
+                "zeroRecords": "没有匹配的数据",
+                "lengthMenu": "显示 _MENU_ 条数据",
+                "info": "显示从 _START_ 到 _END_ 条数据 共 _TOTAL_ 条数据",
+                "infoFiltered": "(从 _MAX_ 条数据中过滤得来)",
+                "loadingRecords": "加载中...",
+                "processing": "处理中...",
+                "paginate": {
+                    "first": "首页",
+                    "last": "末页",
+                    "next": "下一页",
+                    "previous": "上一页"
+                }
+            }
+
+        });
+    });
+</script>
 </body>
 </html>

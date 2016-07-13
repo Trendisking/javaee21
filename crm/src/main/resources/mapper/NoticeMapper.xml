@@ -10,4 +10,18 @@
 
     </insert>
 
+    <select id="findByParam" resultType="Notice">
+        SELECT * from t_notice order by id desc
+        limit ${start},${length}
+
+    </select>
+
+    <select id="count" resultType="long">
+        SELECT count(*) from t_notice
+    </select>
+
+    <select id="findById" resultType="Notice">
+        SELECT * from t_notice where id=#{id}
+    </select>
+
 </mapper>
