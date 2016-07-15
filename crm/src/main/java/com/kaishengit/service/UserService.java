@@ -161,4 +161,12 @@ public class UserService {
     public void editUser(User user) {
         userMapper.updateUser(user);
     }
+
+    /**
+     * 现实所有员工
+     * @return
+     */
+    public List<User> findAllUser() {
+        return userMapper.findAll();
+    }
 }
