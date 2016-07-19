@@ -223,7 +223,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     return "<i class='fa fa-user'></i>"
                 }},
                 {"data":function(row){
-                    if(row.type=='company'){
+                    if(row.companyname){
                         return '<a href="/customer/'+row.id+'">'+row.name+'</a>'+"-"+'<a href="/customer/'+row.companyid+'">'+row.companyname+'</a>';
                     }
                     return '<a href="/customer/'+row.id+'">'+row.name+'</a>';
@@ -301,7 +301,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
             //重置表单
             $("#newForm")[0].reset();
             //使用Ajax加载最新的公司列表
-            $.get("/customer/company.json").done(function(data){
+            $.get("/customer/company.json")
+                    .done(function(data){
                 var $select=$("#companyList select");
                 $select.html("");
                 $select.append("<option></option>");

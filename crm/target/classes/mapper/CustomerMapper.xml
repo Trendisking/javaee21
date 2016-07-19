@@ -58,4 +58,8 @@
     <delete id="del">
         DELETE FROM t_customer WHERE id=#{id}
     </delete>
+
+    <select id="findAllCustomers" resultType="Customer">
+        select * from t_customer
+    </select>
 </mapper>

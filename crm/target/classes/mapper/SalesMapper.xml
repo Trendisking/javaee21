@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kaishengit.mapper.SalesMapper">
+    <cache/>
+    <insert id="save" useGeneratedKeys="true" keyProperty="id">
+        insert INTO t_sales(name,price,customerid,customername,userid,username,successtime,progress,lasttime)
+        values(#{name},#{price},#{customerid},#{customername},#{userid},#{username},#{successtime},#{progress},#{lasttime})
+    </insert>
+
+    <select id="findByParam" resultType="Sales">
+        SELECT * FROM t_sales
+        <where>
+            <if test="userid != null and userid != ''">
+                userid = #{userid}
+            </if>
+            <if test="name != null and name != ''">
+                and name like concat('%',#{name},'%')
+            </if>
+            <if test="progress != null and progress != ''">
+                and progress = #{progress}
+            </if>
+            <if test="startdate != null and startdate != ''">
+                and date(lasttime) >= #{startdate}
+            </if>
+            <if test="enddate != null and enddate != ''">
+                and date(lasttime) &lt;= #{enddate}
+            </if>
+        </where>
+        order by id desc
+        limit ${start},${length}
+    </select>
+
+
+    <select id="countByParam" resultType="long">
+        SELECT count(*) from t_sales
+        <where>
+            <if test="userid != null and userid != ''">
+                userid = #{userid}
+            </if>
+            <if test="name != null and name != ''">
+                and name like concat('%',#{name},'%')
+            </if>
+            <if test="progress != null and progress != ''">
+                and progress = #{progress}
+            </if>
+            <if test="startdate != null and startdate != ''">
+                and date(lasttime) >= #{startdate}
+            </if>
+            <if test="enddate != null and enddate != ''">
+                and date(lasttime) &lt;= #{enddate}
+            </if>
+        </where>
+    </select>
+
+    <select id="findById" resultType="com.kaishengit.pojo.Sales">
+        select * from t_sales where id=#{id}
+    </select>
+    <delete id="delById">
+        DELETE FROM t_sales where id=#{id}
+    </delete>
+
+    <update id="update">
+        update t_sales set lasttime=#{lasttime},successtime=#{successtime},progress=#{progress}
+        where id=${id}
+    </update>
+
+    <delete id="del">
+        DELETE FROM t_sales WHERE id = #{id}
+    </delete>
+</mapper>

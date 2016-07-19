@@ -62,7 +62,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 <th>#</th>
                                 <th>名称</th>
                                 <th>大小</th>
-                                <th>创建人</th
+                                <th>创建人</th>
                                 <th>创建时间</th>
                             </tr>
                         </thead>
