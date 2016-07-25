@@ -10,8 +10,10 @@ import com.kaishengit.dto.DataTablesResult;
 import com.kaishengit.exception.ForbiddenException;
 import com.kaishengit.exception.NotFoundException;
 import com.kaishengit.pojo.Customer;
+import com.kaishengit.pojo.Task;
 import com.kaishengit.pojo.User;
 import com.kaishengit.service.CustomerService;
+import com.kaishengit.service.TaskService;
 import com.kaishengit.service.UserService;
 import com.kaishengit.util.ShiroUtil;
 import org.springframework.stereotype.Controller;
@@ -40,6 +42,8 @@ public class CustomerController {
     private CustomerService customerService;
     @Inject
     private UserService userService;
+    @Inject
+    private TaskService taskService;
     @RequestMapping(method = RequestMethod.GET)
     public String customerList(Model model){
         model.addAttribute("companyList",customerService.findAllCompany());
@@ -144,6 +148,10 @@ public class CustomerController {
         }
         List<User> userList=userService.findAllUser();
         model.addAttribute("userList",userList);
+
+        List<Task> taskList=taskService.findAllTask();
+        model.addAttribute("taskList",taskList);
+
         return "customer/view";
 
      }
@@ -181,5 +189,20 @@ public class CustomerController {
 
         outputStream.flush();
         outputStream.close();
+    }
+
+    /**
+     * 给客户添加待办事项
+     * @param task
+     * @param hour
+     * @param min
+     * @return
+     */
+    @RequestMapping(value = "/task/new",method = RequestMethod.POST)
+    @ResponseBody
+    public String newTask(Task task,String hour,String min) {
+        taskService.saveTask(task,hour,min);
+        return "success";
+
     }
 }

@@ -179,6 +179,10 @@ public class CustomerService {
     }
 
     public  List<Customer> findAllCustomers() {
+        Integer userid = null;
+        if(ShiroUtil.isEmployee()) {
+            userid = ShiroUtil.getCurrentUserID();
+        }
         return customerMapper.findAllCustomers();
     }
 }

@@ -1,6 +1,7 @@
 package com.kaishengit.mapper;
 
 import com.kaishengit.pojo.Customer;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 import java.util.Map;
@@ -29,4 +30,8 @@ public interface CustomerMapper {
     void del(Integer id);
 
     List<Customer> findAllCustomers();
+
+    Long findNewCustomerCount(@Param("start") String start,@Param("end") String end);
+
+    List<Customer> findAll(Integer userid);
 }

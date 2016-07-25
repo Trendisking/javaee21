@@ -13,4 +13,20 @@
         VALUES (#{title},#{start},#{end},#{color},#{remindertime},#{custid},#{salesid},#{userid})
 
     </insert>
+    <select id="findTimeOutTask" resultType="com.kaishengit.pojo.Task">
+        SELECT * FROM t_task WHERE userid = #{userId} and date(`end`) &lt; #{today} and done = 0
+    </select>
+    <delete id="del">
+        delete from t_task where id=#{id}
+    </delete>
+    <select id="findById" resultType="Task">
+        select * from t_task where id=#{id}
+    </select>
+    
+    <update id="update" >
+        UPDATE t_task set done=#{done},color=#{color} where id=#{id}
+    </update>
+    <select id="findAll" resultType="Task">
+        select * from t_task
+    </select>
 </mapper>

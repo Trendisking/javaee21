@@ -1,6 +1,7 @@
 package com.kaishengit.mapper;
 
 import com.kaishengit.pojo.Task;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -9,7 +10,17 @@ import java.util.List;
  */
 public interface TaskMapper {
 
-    List<Task> findByUserIdAndDateRanger(Integer currentUserID, String start, String end);
+    List<Task> findByUserIdAndDateRanger(@Param("userid") Integer currentUserID, @Param("start")String start, @Param("end")String end);
 
     void save(Task task);
+
+    List<Task> findTimeOutTask(@Param("userId") Integer userID,@Param("today") String today);
+
+    void del(Integer id);
+
+    Task findById(Integer id);
+
+    void update(Task task);
+
+    List<Task> findAll();
 }

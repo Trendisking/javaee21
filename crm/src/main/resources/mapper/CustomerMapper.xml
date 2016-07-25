@@ -62,4 +62,18 @@
     <select id="findAllCustomers" resultType="Customer">
         select * from t_customer
     </select>
+    <select id="findNewCustomerCount" resultType="long">
+        SELECT count(*) from t_customer
+        where DATE(createtime)>=#{start} and date(createtime) &lt;=#{end}
+    </select>
+
+    <select id="findAll" resultType="Customer">
+        select * from t_customer
+        <where>
+            <if test="userid != null and userid != ''">
+                userid = #{userid}
+            </if>
+        </where>
+        ORDER BY id DESC
+    </select>
 </mapper>

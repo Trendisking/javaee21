@@ -4,6 +4,7 @@ import com.kaishengit.mapper.TaskMapper;
 import com.kaishengit.pojo.Task;
 import com.kaishengit.util.ShiroUtil;
 import org.apache.commons.lang3.StringUtils;
+import org.joda.time.DateTime;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -33,5 +34,27 @@ public class TaskService {
         }
         task.setUserid(ShiroUtil.getCurrentUserID());
         taskMapper.save(task);
+    }
+
+    public List<Task> findTimeOutTasks() {
+        String today = DateTime.now().toString("yyyy-MM-dd");
+        return taskMapper.findTimeOutTask(ShiroUtil.getCurrentUserID(),today);
+    }
+
+
+    public void delTask(Integer id) {
+        taskMapper.del(id);
+    }
+
+    public Task doneTask(Integer id) {
+        Task task=taskMapper.findById(id);
+        task.setDone(true);
+        task.setColor("#cccccc");
+        taskMapper.update(task);
+        return task;
+    }
+
+    public List<Task> findAllTask() {
+        return taskMapper.findAll();
     }
 }
