@@ -10,6 +10,7 @@
             <generator class="uuid"/>
         </id>
         <property name="title"/>
+        <property name="version"/>
     </class>
 
 </hibernate-mapping>

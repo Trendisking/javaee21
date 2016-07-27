@@ -40,7 +40,7 @@ public class HibernateTestCase {
     public void testFindById(){
         Session session= HibernateUtil.getSession();
         session.beginTransaction();
-        User user=(User)session.get(User.class,1);
+        User user=(User)session.get(User.class,38);
         System.out.println(user.getUsername());
         session.getTransaction().commit();
 

@@ -26,7 +26,7 @@ public class OneToManyTestCase {
         Session session= HibernateUtil.getSession();
         session.beginTransaction();
         Dept dept=new Dept();
-        dept.setDeptname("拒北城");
+        dept.setDeptname("听潮亭");
 
         Employee employee=new Employee();
         employee.setEmpname("桃花");
@@ -54,7 +54,7 @@ public class OneToManyTestCase {
         Session session=HibernateUtil.getSession();
         session.beginTransaction();
 
-        Dept dept=(Dept)session.get(Dept.class,15);
+        Dept dept=(Dept)session.get(Dept.class,19);
         //System.out.println(dept);
         System.out.println(dept.getDeptname());
         Set<Employee> employeeSet=dept.getEmployeeSet();

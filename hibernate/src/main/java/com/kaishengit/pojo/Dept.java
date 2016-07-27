@@ -1,13 +1,19 @@
 package com.kaishengit.pojo;
 
+import javax.persistence.*;
 import java.util.Set;
 
 /**
  * Created by 20330 on 2016/7/26.
  */
+@Entity
+@Table(name="t_dept")
 public class Dept {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String deptname;
+    @OneToMany(mappedBy = "dept")
     private Set<Employee> employeeSet;
 
     public void setEmployeeSet(Set<Employee> employeeSet) {

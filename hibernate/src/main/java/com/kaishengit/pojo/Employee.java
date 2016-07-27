@@ -1,11 +1,19 @@
 package com.kaishengit.pojo;
 
+import javax.persistence.*;
+
 /**
  * Created by 20330 on 2016/7/26.
  */
+@Entity
+@Table(name = "t_employee")
 public class Employee {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String empname;
+    @ManyToOne//(fetch = FetchType.LAZY)
+    @JoinColumn(name = "deptid")//指定外键
     private Dept dept;
 
     public Integer getId() {

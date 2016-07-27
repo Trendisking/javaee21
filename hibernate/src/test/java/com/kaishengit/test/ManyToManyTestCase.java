@@ -19,9 +19,9 @@ public class ManyToManyTestCase {
         session.beginTransaction();
 
         Teacher teacher=new Teacher();
-        teacher.setTeaname("T");
+        teacher.setTeaname("鬼谷子");
         Teacher teacher1=new Teacher();
-        teacher1.setTeaname("T1");
+        teacher1.setTeaname("黄石");
 
         Student student=new Student();
         student.setStuname("张良");
@@ -56,7 +56,7 @@ public class ManyToManyTestCase {
         Session session= HibernateUtil.getSession();
         session.beginTransaction();
 
-        Teacher teacher=(Teacher) session.get(Teacher.class,19);
+        Teacher teacher=(Teacher) session.get(Teacher.class,25);
         System.out.println(teacher.getTeaname());
 
         Set<Student> studentSet=teacher.getStudentSet();
