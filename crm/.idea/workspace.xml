@@ -2,52 +2,477 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8cc7bedc-6d0d-4ba8-a35e-b60c4e71c6c2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/kaishengit/controller/ChartController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/kaishengit/service/ChartService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/chart/home.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/plugins/echart/echarts.common.min.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/tomcat/conf/logging.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/tomcat/conf/tomcat-users.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/tomcat/conf/web.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2016-07-19" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/home_jsp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/home_jsp.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/include/leftSidebar_jsp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/include/leftSidebar_jsp.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/login_jsp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/login_jsp.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/sales/list_jsp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/sales/list_jsp.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/task/list_jsp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/task/list_jsp.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/kaishengit/controller/CustomerController.class" afterPath="$PROJECT_DIR$/target/classes/com/kaishengit/controller/CustomerController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/kaishengit/controller/TaskController.class" afterPath="$PROJECT_DIR$/target/classes/com/kaishengit/controller/TaskController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/kaishengit/mapper/CustomerMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/kaishengit/mapper/CustomerMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/kaishengit/mapper/SalesMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/kaishengit/mapper/SalesMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/kaishengit/mapper/TaskMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/kaishengit/mapper/TaskMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/kaishengit/service/CustomerService.class" afterPath="$PROJECT_DIR$/target/classes/com/kaishengit/service/CustomerService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/kaishengit/service/TaskService.class" afterPath="$PROJECT_DIR$/target/classes/com/kaishengit/service/TaskService.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm.war" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/applicationContext-shiro.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/applicationContext.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/kaishengit/Test.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/kaishengit/controller/AdminController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/kaishengit/controller/ChartController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/kaishengit/controller/CustomerController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/kaishengit/controller/DocumentController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/kaishengit/controller/FilePreviewController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/kaishengit/controller/HomeController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/kaishengit/controller/NoticeController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/kaishengit/controller/SalesController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/kaishengit/controller/TaskController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/kaishengit/controller/UserController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/kaishengit/dto/DataTablesResult.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/kaishengit/dto/FlashMessage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/kaishengit/dto/JSONResult.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/kaishengit/exception/ForbiddenException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/kaishengit/exception/NotFoundException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/kaishengit/mapper/CustomerMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/kaishengit/mapper/DocumentMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/kaishengit/mapper/NoticeMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/kaishengit/mapper/RoleMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/kaishengit/mapper/SalesFileMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/kaishengit/mapper/SalesLogMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/kaishengit/mapper/SalesMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/kaishengit/mapper/TaskMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/kaishengit/mapper/UserLogMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/kaishengit/mapper/UserMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/kaishengit/pojo/Customer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/kaishengit/pojo/Document.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/kaishengit/pojo/Notice.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/kaishengit/pojo/Role.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/kaishengit/pojo/Sales.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/kaishengit/pojo/SalesFile.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/kaishengit/pojo/SalesLog.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/kaishengit/pojo/Task.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/kaishengit/pojo/User.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/kaishengit/pojo/UserLog.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/kaishengit/service/ChartService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/kaishengit/service/CustomerService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/kaishengit/service/DocumentService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/kaishengit/service/FileService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/kaishengit/service/NoticeService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/kaishengit/service/SalesLogService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/kaishengit/service/SalesService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/kaishengit/service/ShiroRealm.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/kaishengit/service/TaskService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/kaishengit/service/UserService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/kaishengit/util/Page.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/kaishengit/util/ServletUtil.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/kaishengit/util/ShiroUtil.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/kaishengit/util/Strings.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/config.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/log4j.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/mapper/CustomerMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/mapper/DocumentMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/mapper/NoticeMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/mapper/RoleMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/mapper/SalesFileMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/mapper/SalesLogMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/mapper/SalesMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/mapper/TaskMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/mapper/UserLogMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/mapper/UserMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/aopalliance-1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/commons-beanutils-1.8.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/commons-codec-1.10.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/commons-dbcp2-2.1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/commons-fileupload-1.3.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/commons-io-2.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/commons-lang3-3.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/commons-logging-1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/commons-pool2-2.4.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/core-3.2.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/guava-19.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/guice-3.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/guice-multibindings-3.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/hamcrest-core-1.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/jackson-annotations-2.6.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/jackson-core-2.6.6.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/jackson-databind-2.6.6.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/javase-3.2.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/javax.inject-1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/jcommander-1.48.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/joda-time-2.9.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/jquery-3.1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/jstl-1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/junit-4.12.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/log4j-1.2.17.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/mybatis-3.4.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/mybatis-spring-1.3.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/mysql-connector-java-5.1.33.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/pinyin4j-2.5.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/shiro-all-1.2.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/shiro-core-1.2.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/shiro-guice-1.2.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/slf4j-api-1.7.21.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/slf4j-log4j12-1.7.21.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/spring-aop-4.2.6.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/spring-beans-4.2.6.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/spring-context-4.2.6.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/spring-context-support-4.2.6.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/spring-core-4.2.6.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/spring-expression-4.2.6.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/spring-jdbc-4.2.6.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/spring-test-4.2.6.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/spring-tx-4.2.6.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/spring-web-4.2.6.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/spring-webmvc-4.2.6.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/lib/timeago-1.4.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/mvc-servlet.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/views/admin/userlist.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/views/chart/home.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/views/customer/list.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/views/customer/view.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/views/document/list.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/views/home.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/views/include/leftSidebar.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/views/include/mainHeader.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/views/login.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/views/notice/list.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/views/notice/new.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/views/notice/view.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/views/sales/list.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/views/sales/view.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/views/setting/loglist.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/views/setting/password.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/views/task/list.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/views/template.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/web.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/bootstrap/css/bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/bootstrap/css/bootstrap.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/bootstrap/css/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/bootstrap/css/bootstrap.min.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/bootstrap/fonts/glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/bootstrap/fonts/glyphicons-halflings-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/bootstrap/fonts/glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/bootstrap/js/bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/bootstrap/js/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/bootstrap/js/npm.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/dist/css/AdminLTE.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/dist/css/AdminLTE.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/dist/css/skins/_all-skins.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/dist/css/skins/_all-skins.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/dist/css/skins/skin-black-light.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/dist/css/skins/skin-black-light.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/dist/css/skins/skin-black.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/dist/css/skins/skin-black.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/dist/css/skins/skin-blue-light.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/dist/css/skins/skin-blue-light.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/dist/css/skins/skin-blue.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/dist/css/skins/skin-blue.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/dist/css/skins/skin-green-light.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/dist/css/skins/skin-green-light.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/dist/css/skins/skin-green.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/dist/css/skins/skin-green.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/dist/css/skins/skin-purple-light.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/dist/css/skins/skin-purple-light.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/dist/css/skins/skin-purple.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/dist/css/skins/skin-purple.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/dist/css/skins/skin-red-light.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/dist/css/skins/skin-red-light.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/dist/css/skins/skin-red.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/dist/css/skins/skin-red.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/dist/css/skins/skin-yellow-light.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/dist/css/skins/skin-yellow-light.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/dist/css/skins/skin-yellow.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/dist/css/skins/skin-yellow.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/dist/img/avatar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/dist/img/avatar04.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/dist/img/avatar2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/dist/img/avatar3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/dist/img/avatar5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/dist/img/boxed-bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/dist/img/boxed-bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/dist/img/credit/american-express.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/dist/img/credit/cirrus.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/dist/img/credit/mastercard.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/dist/img/credit/mestro.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/dist/img/credit/paypal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/dist/img/credit/paypal2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/dist/img/credit/visa.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/dist/img/default-50x50.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/dist/img/icons.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/dist/img/photo1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/dist/img/photo2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/dist/img/photo3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/dist/img/photo4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/dist/img/user1-128x128.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/dist/img/user2-160x160.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/dist/img/user3-128x128.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/dist/img/user4-128x128.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/dist/img/user5-128x128.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/dist/img/user6-128x128.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/dist/img/user7-128x128.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/dist/img/user8-128x128.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/dist/js/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/dist/js/app.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/dist/js/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/dist/js/pages/dashboard.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/dist/js/pages/dashboard2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/img/1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/img/2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/colorpicker/bootstrap-colorpicker.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/colorpicker/bootstrap-colorpicker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/colorpicker/bootstrap-colorpicker.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/colorpicker/bootstrap-colorpicker.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/colorpicker/img/alpha-horizontal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/colorpicker/img/alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/colorpicker/img/hue-horizontal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/colorpicker/img/hue.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/colorpicker/img/saturation.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datatables/css/dataTables.bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datatables/css/dataTables.bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datatables/css/dataTables.bootstrap4.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datatables/css/dataTables.bootstrap4.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datatables/css/dataTables.foundation.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datatables/css/dataTables.foundation.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datatables/css/dataTables.jqueryui.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datatables/css/dataTables.jqueryui.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datatables/css/dataTables.material.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datatables/css/dataTables.material.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datatables/css/dataTables.semanticui.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datatables/css/dataTables.semanticui.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datatables/css/dataTables.uikit.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datatables/css/dataTables.uikit.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datatables/css/jquery.dataTables.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datatables/css/jquery.dataTables.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datatables/css/jquery.dataTables_themeroller.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datatables/images/Sorting icons.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datatables/images/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datatables/images/sort_asc.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datatables/images/sort_asc_disabled.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datatables/images/sort_both.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datatables/images/sort_desc.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datatables/images/sort_desc_disabled.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datatables/js/dataTables.bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datatables/js/dataTables.bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datatables/js/dataTables.bootstrap4.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datatables/js/dataTables.bootstrap4.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datatables/js/dataTables.foundation.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datatables/js/dataTables.foundation.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datatables/js/dataTables.jqueryui.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datatables/js/dataTables.jqueryui.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datatables/js/dataTables.material.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datatables/js/dataTables.material.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datatables/js/dataTables.semanticui.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datatables/js/dataTables.semanticui.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datatables/js/dataTables.uikit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datatables/js/dataTables.uikit.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datatables/js/jquery.dataTables.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datatables/js/jquery.dataTables.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datepicker/bootstrap-datepicker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datepicker/datepicker3.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datepicker/locales/bootstrap-datepicker.ar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datepicker/locales/bootstrap-datepicker.az.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datepicker/locales/bootstrap-datepicker.bg.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datepicker/locales/bootstrap-datepicker.ca.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datepicker/locales/bootstrap-datepicker.cs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datepicker/locales/bootstrap-datepicker.cy.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datepicker/locales/bootstrap-datepicker.da.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datepicker/locales/bootstrap-datepicker.de.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datepicker/locales/bootstrap-datepicker.el.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datepicker/locales/bootstrap-datepicker.es.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datepicker/locales/bootstrap-datepicker.et.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datepicker/locales/bootstrap-datepicker.fa.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datepicker/locales/bootstrap-datepicker.fi.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datepicker/locales/bootstrap-datepicker.fr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datepicker/locales/bootstrap-datepicker.gl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datepicker/locales/bootstrap-datepicker.he.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datepicker/locales/bootstrap-datepicker.hr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datepicker/locales/bootstrap-datepicker.hu.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datepicker/locales/bootstrap-datepicker.id.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datepicker/locales/bootstrap-datepicker.is.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datepicker/locales/bootstrap-datepicker.it.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datepicker/locales/bootstrap-datepicker.ja.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datepicker/locales/bootstrap-datepicker.ka.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datepicker/locales/bootstrap-datepicker.kk.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datepicker/locales/bootstrap-datepicker.kr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datepicker/locales/bootstrap-datepicker.lt.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datepicker/locales/bootstrap-datepicker.lv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datepicker/locales/bootstrap-datepicker.mk.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datepicker/locales/bootstrap-datepicker.ms.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datepicker/locales/bootstrap-datepicker.nb.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datepicker/locales/bootstrap-datepicker.nl-BE.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datepicker/locales/bootstrap-datepicker.nl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datepicker/locales/bootstrap-datepicker.no.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datepicker/locales/bootstrap-datepicker.pl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datepicker/locales/bootstrap-datepicker.pt-BR.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datepicker/locales/bootstrap-datepicker.pt.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datepicker/locales/bootstrap-datepicker.ro.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datepicker/locales/bootstrap-datepicker.rs-latin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datepicker/locales/bootstrap-datepicker.rs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datepicker/locales/bootstrap-datepicker.ru.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datepicker/locales/bootstrap-datepicker.sk.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datepicker/locales/bootstrap-datepicker.sl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datepicker/locales/bootstrap-datepicker.sq.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datepicker/locales/bootstrap-datepicker.sv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datepicker/locales/bootstrap-datepicker.sw.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datepicker/locales/bootstrap-datepicker.th.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datepicker/locales/bootstrap-datepicker.tr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datepicker/locales/bootstrap-datepicker.ua.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datepicker/locales/bootstrap-datepicker.vi.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datepicker/locales/bootstrap-datepicker.zh-CN.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/datepicker/locales/bootstrap-datepicker.zh-TW.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/daterangepicker/daterangepicker.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/daterangepicker/daterangepicker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/echart/echarts.common.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/fontawesome/css/font-awesome.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/fontawesome/css/font-awesome.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/fontawesome/css/font-awesome.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/fullcalendar/fullcalendar.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/fullcalendar/fullcalendar.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/all.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/flat/_all.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/flat/aero.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/flat/aero.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/flat/aero@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/flat/blue.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/flat/blue.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/flat/blue@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/flat/flat.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/flat/flat.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/flat/flat@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/flat/green.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/flat/green.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/flat/green@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/flat/grey.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/flat/grey.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/flat/grey@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/flat/orange.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/flat/orange.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/flat/orange@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/flat/pink.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/flat/pink.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/flat/pink@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/flat/purple.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/flat/purple.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/flat/purple@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/flat/red.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/flat/red.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/flat/red@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/flat/yellow.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/flat/yellow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/flat/yellow@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/futurico/futurico.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/futurico/futurico.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/futurico/futurico@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/icheck.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/icheck.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/line/_all.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/line/aero.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/line/blue.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/line/green.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/line/grey.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/line/line.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/line/line.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/line/line@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/line/orange.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/line/pink.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/line/purple.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/line/red.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/line/yellow.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/minimal/_all.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/minimal/aero.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/minimal/aero.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/minimal/aero@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/minimal/blue.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/minimal/blue.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/minimal/blue@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/minimal/green.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/minimal/green.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/minimal/green@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/minimal/grey.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/minimal/grey.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/minimal/grey@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/minimal/minimal.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/minimal/minimal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/minimal/minimal@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/minimal/orange.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/minimal/orange.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/minimal/orange@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/minimal/pink.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/minimal/pink.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/minimal/pink@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/minimal/purple.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/minimal/purple.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/minimal/purple@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/minimal/red.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/minimal/red.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/minimal/red@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/minimal/yellow.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/minimal/yellow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/minimal/yellow@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/polaris/polaris.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/polaris/polaris.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/polaris/polaris@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/square/_all.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/square/aero.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/square/aero.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/square/aero@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/square/blue.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/square/blue.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/square/blue@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/square/green.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/square/green.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/square/green@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/square/grey.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/square/grey.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/square/grey@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/square/orange.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/square/orange.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/square/orange@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/square/pink.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/square/pink.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/square/pink@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/square/purple.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/square/purple.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/square/purple@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/square/red.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/square/red.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/square/red@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/square/square.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/square/square.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/square/square@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/square/yellow.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/square/yellow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/iCheck/square/yellow@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/jQuery/jQuery-2.2.0.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/moment/moment.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/simditor/images/image.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/simditor/scripts/hotkeys.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/simditor/scripts/hotkeys.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/simditor/scripts/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/simditor/scripts/module.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/simditor/scripts/module.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/simditor/scripts/simditor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/simditor/scripts/simditor.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/simditor/scripts/uploader.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/simditor/scripts/uploader.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/simditor/styles/editor.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/simditor/styles/fonticon.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/simditor/styles/simditor.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/simditor/styles/simditor.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/timeago/timeago.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/timeago/timeago_zh_cn.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/validate/jquery.validate.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/webuploader/Uploader.swf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/webuploader/webuploader.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/webuploader/webuploader.custom.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/webuploader/webuploader.custom.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/webuploader/webuploader.fis.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/webuploader/webuploader.flashonly.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/webuploader/webuploader.flashonly.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/webuploader/webuploader.html5only.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/webuploader/webuploader.html5only.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/webuploader/webuploader.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/webuploader/webuploader.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/webuploader/webuploader.noimage.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/webuploader/webuploader.noimage.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/webuploader/webuploader.nolog.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/webuploader/webuploader.nolog.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/webuploader/webuploader.withoutimage.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/static/plugins/webuploader/webuploader.withoutimage.min.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/kaishengit/controller/CustomerController.java" afterPath="$PROJECT_DIR$/src/main/java/com/kaishengit/controller/CustomerController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/kaishengit/controller/TaskController.java" afterPath="$PROJECT_DIR$/src/main/java/com/kaishengit/controller/TaskController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/kaishengit/mapper/CustomerMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/kaishengit/mapper/CustomerMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/kaishengit/mapper/SalesMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/kaishengit/mapper/SalesMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/kaishengit/mapper/TaskMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/kaishengit/mapper/TaskMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/kaishengit/service/CustomerService.java" afterPath="$PROJECT_DIR$/src/main/java/com/kaishengit/service/CustomerService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/kaishengit/service/TaskService.java" afterPath="$PROJECT_DIR$/src/main/java/com/kaishengit/service/TaskService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/CustomerMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/CustomerMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/SalesMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/SalesMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/TaskMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/TaskMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/customer/view.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/customer/view.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/leftSidebar.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/leftSidebar.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/mainHeader.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/mainHeader.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/task/list.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/task/list.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mapper/CustomerMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/CustomerMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mapper/SalesMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/SalesMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mapper/TaskMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/TaskMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ssm/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../ssm/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../hibernate/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../hibernate/.idea/workspace.xml" />
     </list>
     <ignored path="ssm.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -79,6 +504,24 @@
         <option name="myItemId" value="MySQL - kaisheng_crm@localhost" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="t_user_log" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="MySQL - kaisheng_crm@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="t_user" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
     </PATH>
     <PATH>
       <PATH_ELEMENT>
@@ -91,6 +534,90 @@
       </PATH_ELEMENT>
       <PATH_ELEMENT>
         <option name="myItemId" value="t_task" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="MySQL - kaisheng_crm@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="t_salesfile" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="MySQL - kaisheng_crm@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="t_sales_log" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="MySQL - kaisheng_crm@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="t_sales" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="MySQL - kaisheng_crm@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="t_role" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="MySQL - kaisheng_crm@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="t_notice" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="MySQL - kaisheng_crm@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="t_document" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
@@ -121,14 +648,128 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="list.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/customer/list.jsp">
+      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7099622">
-              <caret line="458" column="7" selection-start-line="458" selection-start-column="7" selection-end-line="458" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="kaisheng_crm.t_user" pinned="false" current-in-tab="true">
+        <entry file="dbDummy://dbtable:/ace529f2/69c0d2bc-d66c-42aa-b11c-8cc135be57d4/kaisheng_crm.t_user">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="list.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/sales/list.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="286" column="5" selection-start-line="286" selection-start-column="5" selection-end-line="286" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="view.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/sales/view.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="187" column="18" selection-start-line="187" selection-start-column="18" selection-end-line="187" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SalesController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/controller/SalesController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="49" column="67" selection-start-line="49" selection-start-column="67" selection-end-line="49" selection-end-column="67" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SalesService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/service/SalesService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="127" column="0" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SalesMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/mapper/SalesMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SalesMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/SalesMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="75" column="61" selection-start-line="75" selection-start-column="61" selection-end-line="75" selection-end-column="61" />
               <folding>
-                <marker date="1468982154000" expanded="true" signature="10203:10216" placeholder="..." />
+                <marker date="1468977774000" expanded="true" signature="304:529" placeholder="insert INTO t_sales... " />
+                <marker date="1468977774000" expanded="true" signature="602:1327" placeholder="SELECT * FRO... t_sales" />
+                <marker date="1468977774000" expanded="true" signature="2165:2201" placeholder="select * fro... t_sales" />
+                <marker date="1468977774000" expanded="true" signature="2250:2284" placeholder="DELETE FROM " />
+                <marker date="1468977774000" expanded="true" signature="2333:2443" placeholder="update t_sal... " />
+                <marker date="1468977774000" expanded="true" signature="2489:2525" placeholder="DELETE FROM " />
+                <marker date="1468977774000" expanded="true" signature="2609:2740" placeholder="SELECT count... t_sales" />
+                <marker date="1468977774000" expanded="true" signature="2826:2959" placeholder="SELECT sum(p... t_sales" />
+                <marker date="1468977774000" expanded="true" signature="3041:3399" placeholder="SELECT temp.... temp" />
+                <marker date="1468977774000" expanded="true" signature="3251:3278" placeholder="SELECT '初次接触... " />
+                <marker date="1468977774000" expanded="true" signature="3293:3306" placeholder="SELECT '确认意向... " />
+                <marker date="1468977774000" expanded="true" signature="3321:3334" placeholder="SELECT '提供合同... " />
+                <marker date="1468977774000" expanded="true" signature="3349:3362" placeholder="SELECT '完成交易... " />
+                <marker date="1468977774000" expanded="true" signature="3377:3390" placeholder="SELECT '交易搁置... " />
+                <marker date="1468977774000" expanded="true" signature="3482:3707" placeholder="select user.... id" />
+                <marker date="1468977774000" expanded="true" signature="3668:3698" placeholder="select id,re... t_user" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SalesLogMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/SalesLogMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1468851914000" expanded="true" signature="267:359" placeholder="insert into t_sales_log" />
+                <marker date="1468851914000" expanded="true" signature="437:504" placeholder="select * fro... t_sales_log" />
+                <marker date="1468851914000" expanded="true" signature="550:700" placeholder="DELETE FROM " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="userlist.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/userlist.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="248" column="18" selection-start-line="248" selection-start-column="17" selection-end-line="248" selection-end-column="18" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -257,9 +898,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -1250,13 +1888,16 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../medical" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="RecentsManager">
@@ -1275,7 +1916,7 @@
       <recent name="F:\project21\crm\src\main\webapp\static\plugins\daterangepicker" />
     </key>
   </component>
-  <component name="RunManager" selected="Maven.package">
+  <component name="RunManager" selected="Maven.tomcat">
     <configuration default="false" name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -1821,11 +2462,16 @@
       <workItem from="1469024149954" duration="2168000" />
       <workItem from="1469080488162" duration="1035000" />
       <workItem from="1469095624916" duration="100000" />
+      <workItem from="1469776440726" duration="1025000" />
+      <workItem from="1469839013398" duration="2505000" />
+      <workItem from="1469862128097" duration="994000" />
+      <workItem from="1469895447977" duration="4845000" />
+      <workItem from="1469948195431" duration="723000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="196742000" />
+    <option name="totallyTimeSpent" value="206834000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1850,9 +2496,9 @@
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20096983" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.234375" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1487069" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3108836" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2494612" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1861,7 +2507,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3798627" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37556562" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32951945" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32951945" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1893,12 +2539,6 @@
           <line>158</line>
           <properties />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/kaishengit/service/CustomerService.java</url>
-          <line>185</line>
-          <properties />
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
       </breakpoints>
       <option name="time" value="23" />
     </breakpoint-manager>
@@ -1909,83 +2549,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-core/4.2.6.RELEASE/spring-core-4.2.6.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38431373">
-          <caret line="33" column="28" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/plugins/daterangepicker/daterangepicker.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="212.06522">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/plugins/daterangepicker/daterangepicker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-27.716526">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-webmvc/4.2.6.RELEASE/spring-webmvc-4.2.6.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36386138">
-          <caret line="94" column="19" selection-start-line="94" selection-start-column="19" selection-end-line="94" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/mapper/SalesFileMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="8" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/pojo/SalesFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/69c0d2bc-d66c-42aa-b11c-8cc135be57d4/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37326607">
-          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/SalesFileMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5670498">
-          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/SalesLogMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8978289">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/mapper/SalesLogMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6429433">
-          <caret line="15" column="8" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/plugins/datepicker/locales/bootstrap-datepicker.ar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/static/plugins/fullcalendar/fullcalendar.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1997,13 +2560,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/service/SalesService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.043580685">
-          <caret line="110" column="25" selection-start-line="110" selection-start-column="25" selection-end-line="110" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -2085,28 +2641,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/mainHeader.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.7970113">
-          <caret line="39" column="9" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/leftSidebar.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.869565">
-          <caret line="16" column="142" selection-start-line="16" selection-start-column="142" selection-end-line="16" selection-end-column="142" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/mapper/CustomerMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.64719903">
           <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2121,20 +2659,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="70" column="5" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/SalesMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.304348">
-          <caret line="75" column="61" selection-start-line="75" selection-start-column="61" selection-end-line="75" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/mapper/SalesMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -2188,30 +2712,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/sales/view.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.672131">
-          <caret line="144" column="65" selection-start-line="144" selection-start-column="65" selection-end-line="144" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/sales/list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.7263556">
-          <caret line="286" column="5" selection-start-line="286" selection-start-column="5" selection-end-line="286" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/controller/SalesController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64719903">
-          <caret line="49" column="67" selection-start-line="49" selection-start-column="67" selection-end-line="49" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/CustomerMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2237,9 +2737,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="35" column="18" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2254,26 +2751,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="57" column="31" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
-          <folding>
-            <element signature="e#1396#1397#0" expanded="false" />
-            <element signature="e#1430#1431#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/service/CustomerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="185" column="0" selection-start-line="185" selection-start-column="0" selection-end-line="185" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#717#718#0" expanded="false" />
-            <element signature="e#797#798#0" expanded="false" />
-            <element signature="e#2885#2886#0" expanded="false" />
-            <element signature="e#2935#2936#0" expanded="false" />
-            <element signature="e#3932#3933#0" expanded="false" />
-            <element signature="e#3989#3990#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2281,17 +2758,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/controller/ChartController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5680581">
-          <caret line="52" column="64" selection-start-line="52" selection-start-column="64" selection-end-line="52" selection-end-column="64" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2299,7 +2765,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.04410012">
           <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2321,11 +2786,222 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/customer/list.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7099622">
+        <state vertical-scroll-proportion="-368.3913">
           <caret line="458" column="7" selection-start-line="458" selection-start-column="7" selection-end-line="458" selection-end-column="7" />
           <folding>
             <marker date="1468982154000" expanded="true" signature="10203:10216" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/controller/ChartController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="52" column="64" selection-start-line="52" selection-start-column="64" selection-end-line="52" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/controller/AdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/ace529f2/69c0d2bc-d66c-42aa-b11c-8cc135be57d4/kaisheng_crm.t_role">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/ace529f2/69c0d2bc-d66c-42aa-b11c-8cc135be57d4/kaisheng_crm.t_customer">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/ace529f2/69c0d2bc-d66c-42aa-b11c-8cc135be57d4/kaisheng_crm.t_notice">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/ace529f2/69c0d2bc-d66c-42aa-b11c-8cc135be57d4/kaisheng_crm.t_user_log">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/mainHeader.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.847826">
+          <caret line="39" column="9" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/leftSidebar.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.8043478">
+          <caret line="16" column="142" selection-start-line="16" selection-start-column="142" selection-end-line="16" selection-end-column="142" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/service/CustomerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.5017668">
+          <caret line="177" column="0" selection-start-line="177" selection-start-column="0" selection-end-line="177" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/sales/list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="286" column="5" selection-start-line="286" selection-start-column="5" selection-end-line="286" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/sales/view.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="187" column="18" selection-start-line="187" selection-start-column="18" selection-end-line="187" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/controller/SalesController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="49" column="67" selection-start-line="49" selection-start-column="67" selection-end-line="49" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/service/SalesService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="127" column="0" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/mapper/SalesMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/SalesMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="75" column="61" selection-start-line="75" selection-start-column="61" selection-end-line="75" selection-end-column="61" />
+          <folding>
+            <marker date="1468977774000" expanded="true" signature="304:529" placeholder="insert INTO t_sales... " />
+            <marker date="1468977774000" expanded="true" signature="602:1327" placeholder="SELECT * FRO... t_sales" />
+            <marker date="1468977774000" expanded="true" signature="2165:2201" placeholder="select * fro... t_sales" />
+            <marker date="1468977774000" expanded="true" signature="2250:2284" placeholder="DELETE FROM " />
+            <marker date="1468977774000" expanded="true" signature="2333:2443" placeholder="update t_sal... " />
+            <marker date="1468977774000" expanded="true" signature="2489:2525" placeholder="DELETE FROM " />
+            <marker date="1468977774000" expanded="true" signature="2609:2740" placeholder="SELECT count... t_sales" />
+            <marker date="1468977774000" expanded="true" signature="2826:2959" placeholder="SELECT sum(p... t_sales" />
+            <marker date="1468977774000" expanded="true" signature="3041:3399" placeholder="SELECT temp.... temp" />
+            <marker date="1468977774000" expanded="true" signature="3251:3278" placeholder="SELECT '初次接触... " />
+            <marker date="1468977774000" expanded="true" signature="3293:3306" placeholder="SELECT '确认意向... " />
+            <marker date="1468977774000" expanded="true" signature="3321:3334" placeholder="SELECT '提供合同... " />
+            <marker date="1468977774000" expanded="true" signature="3349:3362" placeholder="SELECT '完成交易... " />
+            <marker date="1468977774000" expanded="true" signature="3377:3390" placeholder="SELECT '交易搁置... " />
+            <marker date="1468977774000" expanded="true" signature="3482:3707" placeholder="select user.... id" />
+            <marker date="1468977774000" expanded="true" signature="3668:3698" placeholder="select id,re... t_user" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/SalesLogMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1468851914000" expanded="true" signature="267:359" placeholder="insert into t_sales_log" />
+            <marker date="1468851914000" expanded="true" signature="437:504" placeholder="select * fro... t_sales_log" />
+            <marker date="1468851914000" expanded="true" signature="550:700" placeholder="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/userlist.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="248" column="18" selection-start-line="248" selection-start-column="17" selection-end-line="248" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/ace529f2/69c0d2bc-d66c-42aa-b11c-8cc135be57d4/kaisheng_crm.t_user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
