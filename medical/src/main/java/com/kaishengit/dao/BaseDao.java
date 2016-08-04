@@ -7,7 +7,6 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.criterion.*;
 import org.hibernate.transform.ResultTransformer;
-import org.springframework.util.Assert;
 
 import javax.inject.Inject;
 import java.io.Serializable;
@@ -128,12 +127,11 @@ public class BaseDao<T,PK extends Serializable> {
         return null;
     }
 
-    public  T findUniqueBy(Class<?> entityClass,String propertyName,Object value){
-
-        Assert.hasText(propertyName);
-
-        return (T)getSession().createCriteria(entityClass, String.valueOf(Restrictions.eq(propertyName, value))).uniqueResult();
-
+    public T findUniqueBy(final String propertyName, final Object value) {
+        Criterion criterion = Restrictions.eq(propertyName, value);
+        Criteria criteria=getSession().createCriteria(entityClass);
+        criteria.add(criterion);
+        return ((T) criteria.uniqueResult());
     }
 }
 

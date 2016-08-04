@@ -2,7 +2,6 @@ package com.kaishengit.Service;
 
 import com.kaishengit.dao.RoleDao;
 import com.kaishengit.dao.UserDao;
-import com.kaishengit.mapper.UserMapper;
 import com.kaishengit.pojo.Role;
 import com.kaishengit.pojo.User;
 import org.apache.shiro.authc.*;
@@ -23,6 +22,7 @@ public class ShiroRealm extends AuthorizingRealm {
     private UserDao userDao;
     @Inject
     private RoleDao roleDao;
+
     /*验证用户是否具有某项权限*/
     @Override
     protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principalCollection) {
