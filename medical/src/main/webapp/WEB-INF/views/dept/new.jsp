@@ -26,10 +26,15 @@
                 </div>
                 <div class="box-body form">
                     <form action="" method="post">
-                        <label>科室名称</label>
-                        <input type="text">
-                        <label>负责人</label>
-                        <input type="text">
+                        <div class="form-control">
+                            <label>科室名称</label>
+                            <input type="text" name="deptname" class="form-control" value="${dept.deptname}"/>
+                        </div>
+                        <div class="form-control">
+                            <label>负责人</label>
+                            <input type="text" name="principal" class="form-control" value="${dept.principal}">
+                        </div>
+
                         <div class="form-actions">
                             <button class="button button-flat-action button-pill">保存</button>
                         </div>

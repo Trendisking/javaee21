@@ -27,7 +27,7 @@
                 <div class="box-body form">
                     <form action="" method="post">
                         <label>医保类型名称</label>
-                        <input type="text">
+                        <input type="text" name="insurancename" class="form-control" value="${insurance.insurancename}">
                         <div class="form-actions">
                             <button class="button button-flat-action button-pill">保存</button>
                         </div>

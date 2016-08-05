@@ -27,7 +27,7 @@
                 <div class="box-body form">
                     <form action="" method="post">
                         <label>角色名称</label>
-                        <input type="text">
+                        <input type="text" name="rolename" class="form-control" value="${role.rolename}">
                         <label>病人档案权限</label>
                         <div style="padding-left:50px;margin-bottom:20px">
                             <label class="checkbox inline">

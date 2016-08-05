@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html lang="en">
 <head>
@@ -32,15 +33,15 @@
                             </tr>
                         </thead>
                         <tbody>
-                        <tr>\
-                            <tr>
-                                 <th>市医保</th>
-                                 <th>
-                                    <a href="">修改</a>
-                                    <a href="#">删除</a>
-                                 </th>
-                            <tr>
-                        </tr>
+                            <c:forEach items="${insuranceList}" var="insurance">
+                                <tr>
+                                    <td>${insurance.insurancename}</td>
+                                    <td>
+                                        <a href="/insurance/${insurance.id}/edit">修改</a>
+                                        <a href="/insurance/${insurance.id}/del">删除</a>
+                                    </td>
+                                </tr>
+                            </c:forEach>
                         </tbody>
                     </table>
                 </div>

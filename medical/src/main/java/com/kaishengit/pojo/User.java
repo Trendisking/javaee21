@@ -11,7 +11,7 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private Integer roleid;
+
     private String username;
     private String password;
     private String realname;
@@ -39,13 +39,6 @@ public class User {
         this.id = id;
     }
 
-    public Integer getRoleid() {
-        return roleid;
-    }
-
-    public void setRoleid(Integer roleid) {
-        this.roleid = roleid;
-    }
 
     public String getLogintime() {
         return logintime;

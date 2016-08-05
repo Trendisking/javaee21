@@ -10,60 +10,113 @@
       <schema id="1" name="medical"/>
       <table id="2" parent="1" name="t_role"/>
       <table id="3" parent="1" name="t_user"/>
-      <column id="4" parent="2" name="id">
+      <table id="4" parent="1" name="t_dept"/>
+      <table id="5" parent="1" name="t_disease"/>
+      <table id="6" parent="1" name="t_insurance"/>
+      <column id="7" parent="2" name="id">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="5" parent="2" name="rolename">
+      <column id="8" parent="2" name="rolename">
         <data-type>varchar(45)</data-type>
       </column>
-      <key id="6" parent="2" name="PRIMARY">
+      <key id="9" parent="2" name="PRIMARY">
         <columns>id</columns>
         <primary>1</primary>
       </key>
-      <column id="7" parent="3" name="id">
+      <column id="10" parent="3" name="id">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="8" parent="3" name="username">
+      <column id="11" parent="3" name="username">
         <data-type>varchar(45)</data-type>
       </column>
-      <column id="9" parent="3" name="password">
+      <column id="12" parent="3" name="password">
         <data-type>varchar(45)</data-type>
       </column>
-      <column id="10" parent="3" name="realname">
+      <column id="13" parent="3" name="realname">
         <data-type>varchar(45)</data-type>
       </column>
-      <column id="11" parent="3" name="tel">
+      <column id="14" parent="3" name="tel">
         <data-type>varchar(45)</data-type>
       </column>
-      <column id="12" parent="3" name="logintime">
+      <column id="15" parent="3" name="logintime">
         <data-type>varchar(45)</data-type>
       </column>
-      <column id="13" parent="3" name="loginip">
+      <column id="16" parent="3" name="loginip">
         <data-type>varchar(45)</data-type>
       </column>
-      <column id="14" parent="3" name="roleid">
+      <column id="17" parent="3" name="roleid">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="15" parent="3" name="enable">
+      <column id="18" parent="3" name="enable">
         <data-type>tinyint(4)</data-type>
       </column>
-      <index id="16" parent="3" name="fk_t_user_t_role1_idx">
+      <index id="19" parent="3" name="fk_t_user_t_role1_idx">
         <columns>roleid</columns>
         <desc-columns></desc-columns>
       </index>
-      <key id="17" parent="3" name="PRIMARY">
+      <key id="20" parent="3" name="PRIMARY">
         <columns>id</columns>
         <primary>1</primary>
       </key>
-      <foreign-key id="18" parent="3" name="fk_t_user_t_role1">
+      <foreign-key id="21" parent="3" name="fk_t_user_t_role1">
         <columns>roleid</columns>
         <ref-key>~.t_role.PRIMARY</ref-key>
         <cascade-update-rule>restrict</cascade-update-rule>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
+      <column id="22" parent="4" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="23" parent="4" name="deptname">
+        <data-type>varchar(45)</data-type>
+      </column>
+      <column id="24" parent="4" name="principal">
+        <data-type>varchar(45)</data-type>
+      </column>
+      <key id="25" parent="4" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="26" parent="5" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="27" parent="5" name="name">
+        <data-type>varchar(45)</data-type>
+      </column>
+      <column id="28" parent="5" name="t_dept_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <index id="29" parent="5" name="fk_t_disease_t_dept1_idx">
+        <columns>t_dept_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="30" parent="5" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="31" parent="5" name="fk_t_disease_t_dept1">
+        <columns>t_dept_id</columns>
+        <ref-key>~.t_dept.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="32" parent="6" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="33" parent="6" name="insurancename">
+        <data-type>varchar(45)</data-type>
+      </column>
+      <key id="34" parent="6" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
     </database-model>
   </data-source>
 </component>

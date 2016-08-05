@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -34,14 +35,17 @@
                         </tr>
                         </thead>
                         <tbody>
-                        <tr>
-                            <th></th>
-                            <th></th>
-                            <th>
-                                <a href="">修改</a>
-                                <a href="#">删除</a>
-                            </th>
-                        </tr>
+                            <c:forEach items="${deptList}" var="dept">
+                                <tr>
+                                    <td>${dept.deptname}</td>
+                                    <td>${dept.principal}</td>
+                                    <td>
+                                        <a href="/dept/${dept.id}/edit">修改</a>
+                                        <a href="/dept/${dept.id}/del">删除</a>
+                                    </td>
+                                </tr>
+                            </c:forEach>
+
                         </tbody>
                     </table>
                 </div>

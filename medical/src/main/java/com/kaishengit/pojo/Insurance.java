@@ -11,7 +11,7 @@ public class Insurance {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private String name;
+    private String insurancename;
 
     public Integer getId() {
         return id;
@@ -21,11 +21,11 @@ public class Insurance {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getInsurancename() {
+        return insurancename;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setInsurancename(String insurancename) {
+        this.insurancename = insurancename;
     }
 }

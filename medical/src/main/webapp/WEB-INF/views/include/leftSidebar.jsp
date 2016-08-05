@@ -1,6 +1,6 @@
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib prefix="shiro" uri="http://shiro.apache.org/tags" %>
+
 <div class="navbar navbar-static-top">
     <div class="navbar-inner">
         <a class="brand" href="#">凯盛医疗</a>

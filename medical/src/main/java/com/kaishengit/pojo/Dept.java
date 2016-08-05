@@ -11,7 +11,7 @@ public class Dept {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private String name;
+    private String deptname;
     private String principal;
 
     public Integer getId() {
@@ -22,12 +22,12 @@ public class Dept {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public void setDeptname(String deptname) {
+        this.deptname = deptname;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public String getDeptname() {
+        return deptname;
     }
 
     public String getPrincipal() {
